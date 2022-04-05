@@ -1,15 +1,15 @@
 
-public class PilhaVetor {
+public class PilhaVetorInteiros {
 
 	private int[] elements;
 	private int lastElement;
 
-	public PilhaVetor() {
+	public PilhaVetorInteiros() {
 		elements = new int[10];
 		lastElement = -1;
 	}
 
-	public PilhaVetor(int size) throws Exception {
+	public PilhaVetorInteiros(int size) throws Exception {
 
 		if (size < 0)
 			throw new InvalidSizeException("Invalid size");
@@ -18,7 +18,7 @@ public class PilhaVetor {
 		lastElement = -1;
 	}
 
-	public PilhaVetor(PilhaVetor pilha) throws Exception {
+	public PilhaVetorInteiros(PilhaVetorInteiros pilha) throws Exception {
 
 		if (pilha == null)
 			throw new Exception("Invalid object value");
@@ -81,10 +81,10 @@ public class PilhaVetor {
 
 		if (this == obj)
 			return true;
-		if (obj.getClass() != PilhaVetor.class)
+		if (obj.getClass() != PilhaVetorInteiros.class)
 			return false;
 
-		PilhaVetor pilha = (PilhaVetor) obj;
+		PilhaVetorInteiros pilha = (PilhaVetorInteiros) obj;
 
 		if (this.elements != pilha.elements)
 			return false;
