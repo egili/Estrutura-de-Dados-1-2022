@@ -54,7 +54,7 @@ public class PilhaVetor {
 		return lastElement == elements.length - 1;
 	}
 
-	public int getTop() throws Exception {
+	public int peek() throws Exception {
 
 		if (lastElement == -1)
 			throw new Exception("Can´t get top value of empty stack");

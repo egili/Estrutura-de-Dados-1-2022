@@ -58,7 +58,7 @@ public class Pilha {
 		return lastElement == elements.size();
 	}
 	
-	public Object top() {
+	public Object peek() {
 		return !this.isEmpty() ? lastElement : null;
 	}
 	
