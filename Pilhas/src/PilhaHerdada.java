@@ -14,7 +14,6 @@ public class PilhaHerdada extends Stack {
 
 	@Override
 	public synchronized Object peek() {
-		// TODO Auto-generated method stub
 		return super.peek();
 	}
 	
