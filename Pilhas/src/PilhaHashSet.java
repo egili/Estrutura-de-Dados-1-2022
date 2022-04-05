@@ -1,26 +1,23 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Pilha {
+public class PilhaHashSet {
 
-	private List<Object> elements;
+	private Set<Object> elements;
 	private int lastElement;
 	
-	public Pilha() {
-		elements = new ArrayList<Object>(10);
-		lastElement = -1;
+	public PilhaHashSet() {
+		this.elements = new HashSet<Object>(10);
+		this.lastElement = -1;
 	}
 	
-	public Pilha(int size) throws Exception {
-		
-		if(size < 0)
-			throw new InvalidSizeException("Invalid size");
-		
-		elements = new ArrayList<Object>(size);
-		lastElement = -1;
+	public PilhaHashSet(int size) {
+		this.elements = new HashSet<Object>(size);
+		this.lastElement = -1;
 	}
 	
-	public Pilha(Pilha pilha) throws Exception {
+	public PilhaHashSet(PilhaHashSet pilha) throws Exception {
 		
 		if(pilha == null)
 			throw new Exception("Invalid object value");
@@ -29,7 +26,7 @@ public class Pilha {
 		pilha.lastElement = this.lastElement;
 	}
 	
-	public void push(Object obj) throws Exception {
+public void push(Object obj) throws Exception {
 		
 		if(!this.equals(obj) || obj == null)
 			throw new Exception("Cannot insert a diferent object type in the stack");
@@ -84,10 +81,10 @@ public class Pilha {
 		
 		if(this == obj)
 			return true;
-		if(obj.getClass() != Pilha.class)
+		if(obj.getClass() != PilhaHashSet.class)
 			return false;
 		
-		Pilha pilha = (Pilha) obj; 
+		PilhaHashSet pilha = (PilhaHashSet) obj; 
 		
 		if(this.elements != pilha.elements)
 			return false;
