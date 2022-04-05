@@ -5,6 +5,10 @@ public class PilhaLinkedList {
 
 	private List<Object> elements = new LinkedList<Object>();
 
+	public void push() {
+		
+	}
+	
 	public Object pop() {
 		return elements.remove(elements.size() - 1);
 	}
