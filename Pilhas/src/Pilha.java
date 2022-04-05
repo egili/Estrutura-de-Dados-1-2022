@@ -38,16 +38,12 @@ public class Pilha {
 		elements.add(obj);
 	}
 	
-	private int getSize() {
-		return elements.size();
-	}
-	
 	public Object pop () throws Exception {
 
 		if(isEmpty())
 			throw new Exception("Can´t remove of empty stack");
 		
-		Object obj = elements.remove(getSize() - 1);
+		Object obj = elements.remove(elements.size() - 1);
 		
 		lastElement--;
 		
@@ -55,11 +51,11 @@ public class Pilha {
 	}
 	
 	public boolean isEmpty() {
-		return getSize() == 0;
+		return elements.size() == 0;
 	}
 	
 	public boolean isFull() {
-		return lastElement == getSize();
+		return lastElement == elements.size();
 	}
 	
 	public Object top() {
