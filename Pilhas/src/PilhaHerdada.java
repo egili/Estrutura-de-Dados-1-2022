@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class PilhaHerdada extends Stack { // Stack class extends Vector
+public class PilhaHerdada extends Stack<Object> { // Stack class extends Vector
 
 	@Override
 	public Object push(Object item) {
