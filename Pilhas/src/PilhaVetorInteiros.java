@@ -66,9 +66,8 @@ public class PilhaVetorInteiros {
 
 		int ret = 31;
 
-		for (int i : elements) {
+		for (int i : elements) 
 			ret = ret * 13 + Integer.valueOf(i).hashCode();
-		}
 
 		ret = ret * 13 + Integer.valueOf(this.lastElement).hashCode();
 

@@ -50,7 +50,7 @@ public class PilhaArrayList {
 	}
 	
 	public boolean isEmpty() {
-		return elements.size() == 0;
+		return lastElement == -1;
 	}
 	
 	public boolean isFull() {
