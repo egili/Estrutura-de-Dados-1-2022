@@ -1,8 +1,8 @@
 
 public class PilhaVetorInteiros {
 
-	private int[] elements;
-	private int lastElement;
+	protected int[] elements;
+	protected int lastElement;
 
 	public PilhaVetorInteiros() throws Exception {
 		this(10);
