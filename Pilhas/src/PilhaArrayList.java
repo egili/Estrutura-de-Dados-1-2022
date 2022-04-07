@@ -6,9 +6,8 @@ public class PilhaArrayList {
 	private List<Object> elements;
 	private int lastElement;
 	
-	public PilhaArrayList() {
-		elements = new ArrayList<Object>(10);
-		lastElement = -1;
+	public PilhaArrayList() throws Exception {
+		this(10);
 	}
 	
 	public PilhaArrayList(int size) throws Exception {

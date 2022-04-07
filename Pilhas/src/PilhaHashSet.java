@@ -8,8 +8,7 @@ public class PilhaHashSet {
 	private int lastElement;
 
 	public PilhaHashSet() {
-		this.elements = new HashSet<Object>(10);
-		this.lastElement = -1;
+		this(10);
 	}
 
 	public PilhaHashSet(int size) {
