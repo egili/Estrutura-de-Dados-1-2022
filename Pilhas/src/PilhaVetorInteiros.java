@@ -4,9 +4,8 @@ public class PilhaVetorInteiros {
 	private int[] elements;
 	private int lastElement;
 
-	public PilhaVetorInteiros() {
-		elements = new int[10];
-		lastElement = -1;
+	public PilhaVetorInteiros() throws Exception {
+		this(10);
 	}
 
 	public PilhaVetorInteiros(int size) throws Exception {
@@ -47,7 +46,7 @@ public class PilhaVetorInteiros {
 	}
 
 	public boolean isEmpty() {
-		return elements.length == 0;
+		return lastElement == -1;
 	}
 
 	public boolean isFull() {
@@ -57,7 +56,7 @@ public class PilhaVetorInteiros {
 	public int peek() throws Exception {
 
 		if (lastElement == -1)
-			throw new Exception("Can´t get top value of empty stack");
+			throw new Exception("Can´t get peek value of an empty stack");
 
 		return elements[lastElement];
 	}
