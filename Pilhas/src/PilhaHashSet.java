@@ -16,10 +16,7 @@ public class PilhaHashSet {
 		this.lastElement = -1;
 	}
 
-	public PilhaHashSet(PilhaHashSet pilha) throws Exception {
-
-		if (pilha == null)
-			throw new Exception("Invalid object value");
+	public PilhaHashSet(PilhaHashSet pilha) {
 
 		pilha.elements = this.elements;
 		pilha.lastElement = this.lastElement;

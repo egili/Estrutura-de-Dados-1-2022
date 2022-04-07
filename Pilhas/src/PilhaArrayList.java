@@ -19,10 +19,7 @@ public class PilhaArrayList {
 		lastElement = -1;
 	}
 	
-	public PilhaArrayList(PilhaArrayList pilha) throws Exception {
-		
-		if(pilha == null)
-			throw new Exception("Invalid object value");
+	public PilhaArrayList(PilhaArrayList pilha) {
 		
 		pilha.elements = this.elements;
 		pilha.lastElement = this.lastElement;
@@ -71,7 +68,7 @@ public class PilhaArrayList {
 		
 		int ret = 31;
 		
-		elements.forEach((pilha) -> new ArrayList<Object>(this.elements).hashCode());
+		elements.forEach(pilha -> new ArrayList<Object>(this.elements).hashCode());
 		
 		ret = ret * 13 + Integer.valueOf(this.lastElement).hashCode();
 		
