@@ -3,9 +3,8 @@ import java.util.Stack;
 public class PilhaHerdada extends Stack<Object> { // Stack class extends Vector
 
 	@Override
-	public Object push(Object item) {
-		var passandoOItemSohdeBrinks = item;
-		return super.push(passandoOItemSohdeBrinks);
+	public Object push(Object obj) {
+		return super.push(obj);
 	}
 
 	@Override
