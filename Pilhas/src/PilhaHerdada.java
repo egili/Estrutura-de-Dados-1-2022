@@ -4,7 +4,8 @@ public class PilhaHerdada extends Stack<Object> { // Stack class extends Vector
 
 	@Override
 	public Object push(Object item) {
-		return super.push(item);
+		var passandoOItemSohdeBrinks = item;
+		return super.push(passandoOItemSohdeBrinks);
 	}
 
 	@Override
