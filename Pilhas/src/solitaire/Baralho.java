@@ -3,6 +3,7 @@ package solitaire;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Supplier;
 
 public class Baralho {
 
@@ -17,7 +18,6 @@ public class Baralho {
 
 //pq caralhos eu não consigo trabalhar com enum
 
-
 class Carta{
 	private Map<Naipe, Valor> colecaoCartas;
 	
@@ -25,6 +25,8 @@ class Carta{
 		colecaoCartas = new HashMap<>(52); // 4 naipes * 13 valores = 52
 		
 		colecaoCartas.forEach((n, v) -> colecaoCartas.put(n, v)); // interface biConsumer
+		
+		// o .forEach usa consumer e isso eh um problema (????)
 	}
 	
 	public Map<Naipe, Valor> getCartas() {
@@ -35,6 +37,14 @@ class Carta{
 	public String toString() {
 		return "" + colecaoCartas.values();
 	}
+}
+class Provedora implements Supplier<Carta>{ // acho que supplier >>> consumer nesse caso
+
+	@Override
+	public Carta get() {
+		return new Carta();
+	}
+	
 }
 
 enum Naipe{
