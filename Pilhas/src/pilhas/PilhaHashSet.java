@@ -82,7 +82,7 @@ public class PilhaHashSet {
 
 		if (this == obj)
 			return true;
-		if (obj.getClass() != PilhaHashSet.class)
+		if (obj == null || obj.getClass() != PilhaHashSet.class)
 			return false;
 
 		PilhaHashSet pilha = (PilhaHashSet) obj;

@@ -44,7 +44,7 @@ public class PilhaLinkedList {
 		
 		if (this == obj)
 			return true;
-		if (obj.getClass() != PilhaLinkedList.class)
+		if (obj == null || obj.getClass() != PilhaLinkedList.class)
 			return false;
 
 		PilhaLinkedList pilha = (PilhaLinkedList) obj;

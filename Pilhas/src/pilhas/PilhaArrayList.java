@@ -83,7 +83,7 @@ public class PilhaArrayList {
 		
 		if(this == obj)
 			return true;
-		if(obj.getClass() != PilhaArrayList.class)
+		if(obj == null || obj.getClass() != PilhaArrayList.class)
 			return false;
 		
 		PilhaArrayList pilha = (PilhaArrayList) obj; 
