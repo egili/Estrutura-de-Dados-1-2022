@@ -70,9 +70,9 @@ public class PilhaArrayList {
 		
 		int ret = 31;
 		
-		for (Object obj : elements) {
+		for (Object obj : elements) 
 			ret = ret * 21 + obj.hashCode();
-		}
+		
 		ret = ret * 13 + Integer.valueOf(this.lastElement).hashCode();
 		
 		return ret < 0 ? -ret : ret;

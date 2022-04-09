@@ -69,9 +69,8 @@ public class PilhaHashSet {
 
 //		elements.forEach(pilha -> new ArrayList<Object>(this.elements).hashCode());
 		
-		for (Object obj : elements) {
+		for (Object obj : elements) 
 			ret = ret * 21 + obj.hashCode();
-		}
 
 		ret = ret * 13 + Integer.valueOf(this.lastElement).hashCode();
 
