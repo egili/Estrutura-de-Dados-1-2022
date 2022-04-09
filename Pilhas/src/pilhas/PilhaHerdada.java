@@ -1,3 +1,5 @@
+package pilhas;
+
 import java.util.Stack;
 
 public class PilhaHerdada extends Stack<Object> { // Stack class extends Vector

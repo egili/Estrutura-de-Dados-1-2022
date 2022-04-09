@@ -1,3 +1,4 @@
+package pilhas;
 
 public class InvalidSizeException extends Exception{
 
