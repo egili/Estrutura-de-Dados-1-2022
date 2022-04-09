@@ -54,3 +54,5 @@ enum Naipe{
 enum Valor{
 	AS, DOIS, TRES, QUATRO, CINCO, SEIS, SETE, OITO, NOVE, DEZ, J, Q, K;
 }
+
+// talvez eu devesse montar essa classe de maneira mais simples usando array
