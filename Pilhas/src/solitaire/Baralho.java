@@ -6,7 +6,7 @@ import java.util.Map;
 public class Baralho {
 
 	final private static String[] NAIPE = { "OUROS", "ESPADAS", "COPAS", "PAUS" };
-	final private static char[] VALOR = { ' ', '\u2666', '\u2663', '\u2665', '\u2660' };
+	final private static char[] NAIPE = { ' ', '\u2666', '\u2663', '\u2665', '\u2660' };
 
 
 	public Baralho() {
@@ -22,3 +22,11 @@ public class Baralho {
 }
 
 //pq caralhos eu não consigo trabalhar com a porra de um enum
+
+enum Naipe{
+	OUROS, ESPADAS, COPAS, PAUS;
+}
+
+enum VALOR{
+	
+}
