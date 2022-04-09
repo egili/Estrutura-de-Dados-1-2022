@@ -10,7 +10,6 @@ public class Baralho {
 
 
 	public Baralho() {
-		System.out.println(VALOR);
 //		colecaoCartas = new HashMap<>(52); // 4 naipes * 13 valores = 52
 
 //		colecaoCartas.forEach((n, v) -> colecaoCartas.put(n, v));
