@@ -9,9 +9,13 @@ public class Baralho {
 //	final private static String[] NAIPE = { "OUROS", "ESPADAS", "COPAS", "PAUS" };
 //	final private static char[] NAIPE = { ' ', '\u2666', '\u2663', '\u2665', '\u2660' };
 
+	@Override
+	public String toString() {
+		return "" + Carta.class.toString(); // sujeira de teste
+	}
 }
 
-//pq caralhos eu não consigo trabalhar com a porra de um enum
+//pq caralhos eu não consigo trabalhar com enum
 
 
 class Carta{
@@ -20,7 +24,7 @@ class Carta{
 	public Carta(){
 		colecaoCartas = new HashMap<>(52); // 4 naipes * 13 valores = 52
 		
-		colecaoCartas.forEach((n, v) -> colecaoCartas.put(n, v));
+		colecaoCartas.forEach((n, v) -> colecaoCartas.put(n, v)); // interface biConsumer
 	}
 	
 	public Map<Naipe, Valor> getCartas() {
