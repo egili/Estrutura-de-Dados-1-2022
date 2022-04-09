@@ -80,7 +80,7 @@ public class PilhaVetorInteiros {
 
 		if (this == obj)
 			return true;
-		if (obj.getClass() != PilhaVetorInteiros.class)
+		if (obj == null || obj.getClass() != PilhaVetorInteiros.class)
 			return false;
 
 		PilhaVetorInteiros pilha = (PilhaVetorInteiros) obj;
