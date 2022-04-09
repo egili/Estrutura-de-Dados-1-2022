@@ -16,7 +16,7 @@ public class Baralho {
 	}
 }
 
-//pq caralhos eu não consigo trabalhar com enum
+//pq eu não consigo trabalhar com enum
 
 class Carta{
 	private Map<Naipe, Valor> colecaoCartas;

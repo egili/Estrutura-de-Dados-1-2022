@@ -1,7 +1,7 @@
 package solitaire;
 
 public class BaralhoSimplificado {
-	protected CartaSimplificada[] cartas;
+	private CartaSimplificada[] cartas;
 
 	public BaralhoSimplificado() {
 		cartas = new CartaSimplificada[52];
