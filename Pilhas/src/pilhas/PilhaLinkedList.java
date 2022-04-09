@@ -61,7 +61,7 @@ public class PilhaLinkedList {
 		int ret = 13;
 		
 		for (Object obj : elements) {
-			ret = ret * 31 + new LinkedList<Object>(elements).hashCode();
+			ret = ret * 21 + obj.hashCode();
 		}
 		
 		return ret > 0 ? ret : -ret;
