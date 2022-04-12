@@ -2,7 +2,7 @@ package solitaire;
 
 public class BaralhoSimplificado {
 	private CartaSimplificada[] cartas;
-
+	
 	public BaralhoSimplificado() {
 		cartas = new CartaSimplificada[52];
 		int qual = 0;
